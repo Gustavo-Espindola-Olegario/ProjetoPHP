@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #715AFF, #040F16);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    max-width: 350px;
+    min-height: 40vh;   
+    padding: 2rem;    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.445);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, #715AFF, #040F16);
+}
+
+p {
+    margin-bottom: 2rem;  
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0,0,0, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-image: linear-gradient(to bottom, #715AFF, #040F16);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+input{
+    outline: none; /* tira a linha q fica em volta do input*/    
+    border: 0 none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background-color: #715AFF;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background-image: linear-gradient(to right, #715AFF, #5887FF);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.social-field {
+    padding: 0.4rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-field a i {
+    margin: 0 0.5rem;    
+    width: 15px;
+}
+
+.social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+.social-field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+@media (max-width:450px) {
+    main {
+        width: 70%;
+        min-height: 45vh;   
+    }
+}

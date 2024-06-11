@@ -1,0 +1,133 @@
+@charset "UTF-8" ;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: grid;
+    background-color: #7c29c9;
+    color: white;
+    font-size: 2em;
+    grid-template-columns: 6fr 6fr;
+    align-content: center;
+}
+
+#logo {
+    margin-left: 20px;
+    padding: 30px;
+    font-size: 30px;
+    align-content: center;
+
+}
+.menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+a {
+    text-decoration: none;
+    color: white;    
+}
+
+nav ul li:hover {
+    background-color: #8370ff;
+}
+.bem-logado{
+    font-size: 20px;
+    margin: 40px;
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    border-radius: 0px 0px 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 10px 0px;
+}
+
+img {
+    width: 104vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+p {
+    margin: 30px 0px;
+}
+iframe {
+    width: 95vh;
+    height: 50vh;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+.paragrafo-final{
+    margin: 10px 0px;
+}
+
+.link-xbox {
+    color: black;
+}
+
+#lista-codigos {
+    list-style-type: none;
+    align-items: center; 
+}
+
+.item-lista-codigos{
+    margin-bottom: 10px;
+}
+
+table,td,th{
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right, #7c29c9, #715AFF);
+    color: white;
+}
